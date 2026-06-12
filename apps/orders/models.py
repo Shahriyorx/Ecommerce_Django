@@ -22,3 +22,9 @@ class OrderItem(BaseModel):
 
     def __str__(self):
         return f"{self.quantity} x {self.product.name} for Order #{self.order.id}"
+    
+class Category(BaseModel):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
