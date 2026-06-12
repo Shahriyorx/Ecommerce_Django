@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from apps.products.api_endpoints.products.CategoryCreate.serializers import CategoryCreateSerializers
+from apps.products.api_endpoints.categories.CategoryCreate.serializers import CategoryCreateSerializers
 from apps.products.models import Category
 
 @api_view(['POST'])
